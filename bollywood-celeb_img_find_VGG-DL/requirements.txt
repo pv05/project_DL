@@ -1,7 +1,7 @@
+pip-upgrade
 absl-py 
 aiohttp 
 aiosignal 
-argon2-cffi work
 astor==0.8.1
 astunparse==1.6.3
 async-generator 
