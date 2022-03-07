@@ -4,8 +4,8 @@ from keras_vggface.vggface import VGGFace
 import numpy as np 
 import pickle
 from sklearn.metrics.pairwise import cosine_similarity
-# import cv2
-# import os
+import cv2
+import os
 from mtcnn import MTCNN
 from PIL import Image
 import pandas as pd 
