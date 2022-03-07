@@ -9,12 +9,18 @@ import os
 from mtcnn import MTCNN
 from PIL import Image
 import pandas as pd 
+import urllib.request
 
-feature_list = np.array(pickle.load(open('embedding_actors.pkl','rb')))
-filenames = pickle.load(open('actors_filenames.pkl','rb'))
+
+# feature_list = np.array(pickle.load(open('embedding_actors.pkl','rb')))
+# filenames = pickle.load(open('actors_filenames.pkl','rb'))
+
+feature_list = np.array(pickle.load(urllib.request.urlopen('https://drive.google.com/file/d/16Dsj2JJ41eQQ1F9MvCXfepH3pSihYa1M/view?usp=sharing')))
+filenames = pickle.load(urllib.request.urlopen('https://drive.google.com/file/d/14SZ9ZFrBeQ8DNx5qaJHhLp4MSpcYwmBj/view?usp=sharing'))
 
 model = VGGFace(model='resnet50',include_top=False,input_shape=(224,224,3),pooling='avg')
-df = pd.read_csv('final_imglink_bollywood.csv')
+# df = pd.read_csv('final_imglink_bollywood.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/pv05/project_DL/main/bollywood-celeb_img_find_VGG-DL/final_imglink_bollywood.csv')
 
 st.title('Check Which Bollywood Celebrity You Look Like')
 
