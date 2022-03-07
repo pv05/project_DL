@@ -10,3 +10,4 @@ tensorflow
 tensorflow-cpu
 Pillow==9.0.1
 requests==2.27.1
+opencv-python--headless
