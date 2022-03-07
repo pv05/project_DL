@@ -1,7 +1,7 @@
 mtcnn
 keras
-keras-vggface
-keras_applications
+keras-vggface==0.6
+keras_applications==1.0.8
 tensorflow
 opencv-python
 pickleshare
