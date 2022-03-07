@@ -95,7 +95,6 @@ PySocks
 python-dateutil 
 pytz==2021.3
 PyWavelets==1.2.0
-pywin32==302
 pywinpty
 PyYAML==6.0
 pyzmq 
