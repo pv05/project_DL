@@ -1,12 +1,12 @@
-mtcnn
-keras
+mtcnn==0.1.0
+keras==2.4.3
 keras-vggface==0.6
 keras_applications==1.0.8
-tensorflow
-opencv-python
+Keras-Preprocessing==1.1.2
+tensorflow==2.7.0
+opencv-python==4.5.1.48
 pickleshare
 scikit-learn
-tensorflow
 tensorflow-cpu
 Pillow
 requests
