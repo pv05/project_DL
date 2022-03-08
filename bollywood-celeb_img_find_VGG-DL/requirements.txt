@@ -15,7 +15,7 @@ h5py==3.6.0
 idna==3.3
 importlib-metadata==4.11.2
 joblib==1.1.0
-Keras
+keras==2.0.8
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 keras-vggface
@@ -25,7 +25,7 @@ Markdown==3.3.6
 matplotlib==3.5.1
 mtcnn==0.1.0
 numpy
-oauthlib==3.2.0
+oauthlib==3.2.0t
 opencv-python==4.5.1.48
 opencv-python-headless==4.5.5.62
 opt-einsum==3.3.0
@@ -38,7 +38,7 @@ pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pyparsing==3.0.7
 python-dateutil==2.8.2
-tensorflow
+tensorflow==1.13.1
 tensorflow-cpu
 pytz==2021.3
 PyYAML==6.0
@@ -46,3 +46,4 @@ requests==2.27.1
 requests-oauthlib==1.3.1
 rsa==4.8
 scikit-learn==1.0.2
+h5py==2.10.0
