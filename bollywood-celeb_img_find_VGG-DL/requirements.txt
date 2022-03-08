@@ -30,7 +30,7 @@ opencv-python==4.5.1.48
 opencv-python-headless==4.5.5.62
 opt-einsum==3.3.0
 packaging==21.3
-pandas==1.4.1
+pandas
 pickleshare==0.7.5
 Pillow==9.0.1
 protobuf==3.19.4
