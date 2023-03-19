@@ -13,11 +13,11 @@ import urllib.request
 from tensorflow.keras.layers import Layer, InputSpec
 
 
-# feature_list = np.array(pickle.load(open('embedding_actors.pkl','rb')))
-# filenames = pickle.load(open('actors_filenames.pkl','rb'))
+feature_list = np.array(pickle.load(open('embedding_actors.pkl','rb')))
+filenames = pickle.load(open('actors_filenames.pkl','rb'))
 
-feature_list = np.array(pickle.load(urllib.request.urlopen('https://drive.google.com/file/d/16Dsj2JJ41eQQ1F9MvCXfepH3pSihYa1M/view?usp=sharing')))
-filenames = pickle.load(urllib.request.urlopen('https://drive.google.com/file/d/14SZ9ZFrBeQ8DNx5qaJHhLp4MSpcYwmBj/view?usp=sharing'))
+# feature_list = np.array(pickle.load(urllib.request.urlopen('https://drive.google.com/file/d/16Dsj2JJ41eQQ1F9MvCXfepH3pSihYa1M/view?usp=sharing')))
+# filenames = pickle.load(urllib.request.urlopen('https://drive.google.com/file/d/14SZ9ZFrBeQ8DNx5qaJHhLp4MSpcYwmBj/view?usp=sharing'))
 
 model = VGGFace(model='resnet50',include_top=False,input_shape=(224,224,3),pooling='avg')
 # df = pd.read_csv('final_imglink_bollywood.csv')
@@ -55,7 +55,7 @@ try:
     if st.button('Check'):
         upload_img = linkchecker(upload_img)
         response = requests.get(upload_img).content
-        sample_img = plt.imread(io.BytesIO(response), format='JPG')
+        sample_img = plt.imread(io.BytesIO(response), format=['jpg'])
         result = detector.detect_faces(sample_img)
         if len(result) != 0:
             x,y,width,height = result[0]['box']
